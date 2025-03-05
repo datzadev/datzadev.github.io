@@ -1,0 +1,244 @@
+<li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                    <ul class="submenu megamenu">
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="index-corporate.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/corporate.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Corporate</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-crypto.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/crypto.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Cryptocurrency <span
+                                                    class="badge text-bg-dark ms-2">Dark</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-real-estate.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/real.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Real Estate</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="index-shop.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/shop.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Shop</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-portfolio.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/portfolio.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Portfolio </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-photography.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img
+                                                    src="assets/images/demos/photography.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Photography <span
+                                                    class="badge text-bg-dark ms-2">Dark</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="helpcenter-overview.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img
+                                                    src="assets/images/demos/help-center.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Help Center</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-hosting.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/hosting.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Hosting & Domain</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-video-studio.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img
+                                                    src="assets/images/demos/video-studio.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Video Studio </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="index-job.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/job.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Job & Career</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-ai.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/ai.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">AI Tools</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forums.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/forums.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Forums</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="index-blog.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/blog.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">Blog</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index-nft.html" class="sub-menu-item">
+                                        <div class="text-lg-center">
+                                            <span class="d-none d-lg-block"><img src="assets/images/demos/nft.png"
+                                                    class="img-fluid rounded shadow-md" alt=""></span>
+                                            <span class="mt-lg-2 d-block">NFT Marketplace</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Components</a><span class="menu-arrow"></span>
+                    <ul class="submenu megamenu">
+                        <li>
+                            <ul>
+                                <li><a href="ui-button.html" class="sub-menu-item"><i
+                                            class="uil uil-cube fs-6 align-middle me-1"></i> Buttons</a></li>
+                                <li><a href="ui-badges.html" class="sub-menu-item"><i
+                                            class="uil uil-award fs-6 align-middle me-1"></i> Badges</a></li>
+                                <li><a href="ui-alert.html" class="sub-menu-item"><i
+                                            class="uil uil-info-circle fs-6 align-middle me-1"></i> Alert</a></li>
+                                <li><a href="ui-dropdown.html" class="sub-menu-item"><i
+                                            class="uil uil-layers fs-6 align-middle me-1"></i> Dropdowns</a></li>
+                                <li><a href="ui-typography.html" class="sub-menu-item"><i
+                                            class="uil uil-align-center-alt fs-6 align-middle me-1"></i>
+                                        Typography</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li><a href="ui-background.html" class="sub-menu-item"><i
+                                            class="uil uil-palette fs-6 align-middle me-1"></i> Background</a></li>
+                                <li><a href="ui-text.html" class="sub-menu-item"><i
+                                            class="uil uil-text fs-6 align-middle me-1"></i> Text Color</a></li>
+                                <li><a href="ui-accordion.html" class="sub-menu-item"><i
+                                            class="uil uil-list-ui-alt fs-6 align-middle me-1"></i> Accordions</a>
+                                </li>
+                                <li><a href="ui-card.html" class="sub-menu-item"><i
+                                            class="uil uil-postcard fs-6 align-middle me-1"></i> Cards</a></li>
+                                <li><a href="ui-tooltip-popover.html" class="sub-menu-item"><i
+                                            class="uil uil-backspace fs-6 align-middle me-1"></i> Tooltips &
+                                        Popovers</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li><a href="ui-shadow.html" class="sub-menu-item"><i
+                                            class="uil uil-square-full fs-6 align-middle me-1"></i> Shadows</a></li>
+                                <li><a href="ui-border.html" class="sub-menu-item"><i
+                                            class="uil uil-border-out fs-6 align-middle me-1"></i> Border</a></li>
+                                <li><a href="ui-carousel.html" class="sub-menu-item"><i
+                                            class="uil uil-slider-h-range fs-6 align-middle me-1"></i> Carousel</a>
+                                </li>
+                                <li><a href="ui-form.html" class="sub-menu-item"><i
+                                            class="uil uil-notes fs-6 align-middle me-1"></i> Form Elements</a></li>
+                                <li><a href="ui-breadcrumb.html" class="sub-menu-item"><i
+                                            class="uil uil-sort-amount-down fs-6 align-middle me-1"></i>
+                                        Breadcrumb</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li><a href="ui-pagination.html" class="sub-menu-item"><i
+                                            class="uil uil-copy fs-6 align-middle me-1"></i> Pagination</a></li>
+                                <li><a href="ui-avatar.html" class="sub-menu-item"><i
+                                            class="uil uil-image fs-6 align-middle me-1"></i> Avatars</a></li>
+                                <li><a href="ui-nav-tabs.html" class="sub-menu-item"><i
+                                            class="uil uil-bars fs-6 align-middle me-1"></i> Nav Tabs</a></li>
+                                <li><a href="ui-modals.html" class="sub-menu-item"><i
+                                            class="uil uil-vector-square fs-6 align-middle me-1"></i> Modals</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li><a href="ui-tables.html" class="sub-menu-item"><i
+                                            class="uil uil-table fs-6 align-middle me-1"></i> Tables</a></li>
+                                <li><a href="ui-icons.html" class="sub-menu-item"><i
+                                            class="uil uil-icons fs-6 align-middle me-1"></i> Icons</a></li>
+                                <li><a href="ui-progressbar.html" class="sub-menu-item"><i
+                                            class="uil uil-brackets-curly fs-6 align-middle me-1"></i>
+                                        Progressbar</a></li>
+                                <li><a href="ui-lightbox.html" class="sub-menu-item"><i
+                                            class="uil uil-play-circle fs-6 align-middle me-1"></i> Lightbox</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>

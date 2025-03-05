@@ -1,0 +1,9 @@
+TODO:
+
+1. Theme color  deep down. (dark)   [done]
+2. logo making.                     [done]
+3. web  first page making.          [] 
+4. all graphic  fix. (image input)  []
+5. contentn fix. (writing content)  []
+6. saas project post.               []
+7. social media  profile fix.       []
