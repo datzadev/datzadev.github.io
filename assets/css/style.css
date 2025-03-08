@@ -1,90 +1,30 @@
+/*========================================
+  :root – Only Color Variables (New Palette)
+========================================*/
 :root {
+  --body-bg: #ffffff;
+  /* Dominant background (60%) */
+  --text-color: #1F2937;
+  /* Primary text */
+  --brand-color: #4F46E5;
+  /* Brand color (30%) */
+  --secondary-color: #C7D2FE;
+  /* Secondary elements */
+  --accent-color: #F59E0B;
+  /* Accent (10%) */
+  --gradient: linear-gradient(135deg, var(--brand-color), var(--accent-color));
 
-  --main-color: #0D0518;
-  /* Dark Purple */
-  --dark2: #1b063eff;
-  /* Russian Violet */
-  --persian-rose: #280657ff;
-  /* Russian Violet 2 */
-  --red-crayola: #350571ff;
-  /* Persian Indigo */
-  --btn-color: #9E09D5;
-  /* Indigo */
-  --deep-purple: #4f04a3ff;
-  /* Indigo 2 */
-  --semi-light: #5c03bcff;
-  /* Chrysler Blue */
-  --mid-purple: #5c03bcff;
-  /* Chrysler Blue (Alternative) */
-  --hi-mid-purp: #5c03bcff;
-  /* Chrysler Blue (Alternative) */
-  --to-mid-purp: #5c03bcff;
-  /* Chrysler Blue (Alternative) */
-  --black_10: #0000001a;
-  /* Keeping as is */
-  --black_5: #0000000d;
-  /* Keeping as is */
-  --white-1: #ffffff;
-  /* Keeping as is */
-  --white-2: #fbf9f9;
-  /* Keeping as is */
-  --black: #000000;
-  /* Keeping as is */
-
-
-  /* gradient color */
-  --gradient: linear-gradient(to left top, var(--persian-rose), var(--main-color));
-
-
-
-  --ff-roboto: 'Roboto', sans-serif;
-  --ff-league-spartan: 'League Spartan', sans-serif;
-
-  --fs-1: 3.5rem;
-  --fs-2: 3rem;
-  --fs-3: 2.1rem;
-  --fs-4: 1.7rem;
-  --fs-5: 1.4rem;
-  --fs-6: 1.3rem;
-
-  --fw-700: 700;
-  --fw-500: 500;
-
-
-  /* spacing*/
-
-  --section-padding: 60px;
-
-
-  /* shadow*/
-
-  --shadow-1: 0 6px 24px var(--black_5);
-  --shadow-2: 0 2px 28px var(--black_10);
-
-  /* border radius*/
-
-  --radius-2: 2px;
-  --radius-5: 5px;
-  --radius-8: 8px;
-
-  /**
-   * transition
-   */
-
-  --transition-1: 0.25s ease;
-  --transition-2: 0.5s ease;
-  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
-
+  /* Added custom properties */
+  --shadow: rgba(31, 41, 55, 0.1);
+  /* For subtle drop shadows */
+  --drop: var(--body-bg);
+  /* Dropdown background */
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #RESET
-\*-----------------------------------*/
-
+========================================*/
 *,
 *::before,
 *::after {
@@ -144,32 +84,32 @@ address {
 }
 
 html {
-  font-family: var(--ff-roboto);
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--main-color);
-  color: var(--hi-mid-purp);
+  background-color: var(--body-bg);
   font-size: 1.6rem;
   line-height: 1.8;
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: hsl(0, 0%, 98%);
+  background-color: var(--body-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 80%);
+  background-color: #cccccc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 70%);
+  background-color: #b3b3b3;
 }
 
 :focus-visible {
@@ -177,29 +117,25 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #REUSED STYLE
-\*-----------------------------------*/
-
+========================================*/
 .container {
   padding-inline: 15px;
 }
 
 .btn {
   max-width: max-content;
-  color: var(--white-1);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-700);
+  color: var(--body-bg);
+  font-size: 1.3rem;
+  font-weight: 700;
   padding: 10px 30px;
-  border-radius: var(--radius-5);
-  transition: var(--transition-1);
+  border-radius: 5px;
+  transition: 0.25s ease;
 }
 
 .btn-primary {
-  background-image: var(--gradient);
+  background-color: var(--brand-color);
   background-size: 1000%;
 }
 
@@ -208,36 +144,35 @@ body {
 }
 
 .btn-secondary {
-  color: var(--btn-color);
+  color: var(--secondary-color);
 }
 
 .btn-secondary:is(:hover, :focus) {
-  background-color: var(--btn-color);
-  color: var(--white-1);
+  background-color: var(--brand-color);
+  color: var(--body-bg);
 }
 
 .section {
-  padding-block: var(--section-padding);
+  padding-block: 60px;
 }
 
 .h1,
 .h2,
 .h3 {
-  color: var(--btn-color);
-  font-family: var(--ff-league-spartan);
+  color: var(--brand-color);
   line-height: 1.2;
 }
 
 .h1 {
-  font-size: var(--fs-1);
+  font-size: 3.5rem;
 }
 
 .h2 {
-  font-size: var(--fs-2);
+  font-size: 3rem;
 }
 
 .h3 {
-  font-size: var(--fs-3);
+  font-size: 2.1rem;
 }
 
 .w-100 {
@@ -250,7 +185,7 @@ body {
 }
 
 .section-text {
-  font-size: var(--fs-6);
+  font-size: 1.3rem;
 }
 
 .grid-list {
@@ -259,8 +194,9 @@ body {
 }
 
 .img-holder {
+  /* Assuming aspect-ratio values are defined elsewhere */
   aspect-ratio: var(--width) / var(--height);
-  background-color: var(--deep-purple);
+  background-color: var(--secondary-color);
 }
 
 .img-cover {
@@ -270,27 +206,24 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #HEADER
-\*-----------------------------------*/
-
+========================================*/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   padding-block: 15px;
-  border-block-end: 1px solid var(--to-mid-purp);
+  border-block-end: 1px solid var(--secondary-color);
   z-index: 4;
-  transition: var(--transition-1);
+  transition: 0.25s cubic-bezier(0.13, 0.89, 0.7, 0.08);
+  box-shadow: 2px 2px 12px var(--shadow);
 }
 
 .header.active {
-  filter: drop-shadow(var(--shadow-2));
+  filter: drop-shadow(0 2px 28px var(--shadow));
 }
 
 .header>.container {
@@ -300,10 +233,9 @@ body {
 }
 
 .logo {
-  font-family: var(--ff-league-spartan);
-  color: var(--white-1);
+  color: #ffffff;
   font-size: 3.5rem;
-  font-weight: var(--fw-700);
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -329,8 +261,8 @@ body {
   max-width: calc(100% - 30px);
   width: 100%;
   padding-inline: 0;
-  border: 1px solid var(--to-mid-purp);
-  transition: 0.3s var(--cubic-out);
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s cubic-bezier(0.33, 0.85, 0.4, 0.96);
   max-height: 0;
   visibility: hidden;
   overflow: hidden;
@@ -346,7 +278,7 @@ body {
   padding: 20px 15px;
   padding-block-start: 10px;
   opacity: 0;
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
 .navbar.active .navbar-list {
@@ -354,76 +286,63 @@ body {
 }
 
 .navbar-link {
-  color: var(--white-2);
-  font-family: var(--ff-league-spartan);
-  font-size: var(--fs-4);
+  color: var(--tex);
+  font-size: 1.7rem;
   line-height: 1.2;
   padding-block: 8px;
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
 .navbar-link:is(:hover, :focus) {
-  color: var(--red-crayola);
+  color: var(--accent-color);
 }
 
 .header .btn {
   margin-block-start: 10px;
 }
 
-
-/* ! added in last ! 
-?Style the dropdown button */
-
+/* Dropdown Button */
 .dropdown .dropdown-toggle {
   border: none;
   outline: none;
   padding: 12px 16px;
   background-color: inherit;
   margin: 0;
-  color: var(--white-2);
-  font-family: var(--ff-league-spartan);
-  font-size: var(--fs-4);
-  /* Important for vertical align on mobile phones */
+  color: var(--text-color);
+  font-size: 1.7rem;
 }
-
-/* Style the dropdown content */
 
 .dropdown-content {
   display: none;
   position: absolute;
-  backdrop-filter: blur(10px);
-  background-color: #5900ff5b;
+  /* backdrop-filter: blur(10px); */
+  background-color: var(--drop);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #00000033;
+  box-shadow: 0px 8px 16px 0px var(--shadow);
   border-radius: 6px;
   text-align: left;
   z-index: 1;
-
+  padding: 0.5rem;
 }
 
-/* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: var(--white-2);
+  color: #000;
   padding: 12px 6px;
   text-decoration: none;
   display: block;
 }
 
-
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 
-
-/*-----------------------------------*\
-  #HEO
-\*-----------------------------------*/
-
+/*========================================
+  #HERO
+========================================*/
 .hero {
-  padding-block-start: calc(var(--section-padding) + 50px);
+  padding-block-start: calc(60px + 50px);
   text-align: center;
 }
 
@@ -432,9 +351,9 @@ body {
 }
 
 .hero-subtitle {
-  color: var(--btn-color);
-  font-size: var(--fs-5);
-  font-weight: var(--fw-500);
+  color: var(--brand-color);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .hero-title {
@@ -442,7 +361,7 @@ body {
 }
 
 .hero-text {
-  font-size: var(--fs-5);
+  font-size: 1.4rem;
 }
 
 .hero .btn {
@@ -451,29 +370,20 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #SERVICE
-\*-----------------------------------*/
-
-.service {
-  /* background-color: var(--white-2); */
-}
-
+========================================*/
 .service .section-text {
   margin-block: 5px 35px;
 }
 
 .service-card {
-
   padding: 20px 15px;
-  border: 1px solid var(--mid-purple);
-  border-radius: var(--radius-5);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
   text-align: center;
-  box-shadow: var(--shadow-1);
-  transition: var(--transition-2);
+  box-shadow: 0 6px 24px rgba(31, 41, 55, 0.05);
+  transition: 0.5s ease;
 }
 
 .service-card:is(:hover, :focus-within) {
@@ -481,12 +391,14 @@ body {
 }
 
 .service-card .card-icon {
-  color: var(--white-1);
+  color: #ffffff;
   font-size: 25px;
   max-width: max-content;
   margin-inline: auto;
   padding: 18px;
   border-radius: 50%;
+  /* Uncomment if you want a background:
+     background-color: var(--brand-color); */
 }
 
 .service-card .card-title {
@@ -494,24 +406,20 @@ body {
 }
 
 .service-card .card-text {
-  font-size: var(--fs-6);
+  font-size: 1.3rem;
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #PROJECT
-\*-----------------------------------*/
-
+========================================*/
 .project .section-text {
   margin-block: 5px 35px;
 }
 
 .project-card {
   position: relative;
-  border-radius: var(--radius-8);
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -522,9 +430,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black);
+  background-color: #000000;
   opacity: 0.5;
-  transition: var(--transition-2);
+  transition: 0.5s ease;
 }
 
 .project-card:is(:hover, :focus-within)::after {
@@ -538,7 +446,7 @@ body {
   right: 0;
   padding: 20px;
   z-index: 1;
-  transition: var(--transition-2);
+  transition: 0.5s ease;
 }
 
 .project-card:is(:hover, :focus-within) .card-content {
@@ -546,30 +454,23 @@ body {
 }
 
 .project-card .card-subtitle {
-  color: var(--dark2);
-  font-size: var(--fs-6);
+  color: #b0b0b0;
+  font-size: 1.3rem;
   line-height: 1;
 }
 
 .project-card .card-title {
-  color: var(--white-1);
+  color: #ffffff;
   margin-block: 12px 15px;
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #ABOUT
-\*-----------------------------------*/
-/* .about {
-  background-color: var(--white-2);
-} */
-
+========================================*/
 .about-banner {
   position: relative;
-  border-radius: var(--radius-5);
+  border-radius: 5px;
   overflow: hidden;
   margin-block-end: 25px;
 }
@@ -579,8 +480,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
-  color: var(--red-crayola);
+  color: var(--brand-color);
   font-size: 32px;
   padding: 16px;
   border-radius: 50%;
@@ -589,7 +489,7 @@ body {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 1px var(--white-1);
+    box-shadow: 0 0 0 1px var(--body-bg);
   }
 
   100% {
@@ -624,7 +524,7 @@ body {
 }
 
 .about-item ion-icon {
-  color: var(--red-crayola);
+  color: var(--brand-color);
   flex-shrink: 0;
   margin-block-start: 2px;
 }
@@ -634,13 +534,9 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #CTA
-\*-----------------------------------*/
-
+========================================*/
 .cta {
   position: relative;
   background-repeat: no-repeat;
@@ -664,12 +560,12 @@ body {
 
 .cta-subtitle,
 .cta .section-title {
-  color: var(--white-1);
+  color: #ffffff;
 }
 
 .cta-subtitle {
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
+  font-size: 1.3rem;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -682,27 +578,19 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #BLOG
-\*-----------------------------------*/
-
+========================================*/
 .blog .section-text {
   margin-block: 5px 35px;
 }
-
-/* .blog-card {
-  background-color: var(--white-2);
-} */
 
 .blog-card .card-banner {
   overflow: hidden;
 }
 
 .blog-card .card-banner img {
-  transition: var(--transition-2);
+  transition: 0.5s ease;
 }
 
 .blog-card:is(:hover, :focus-within) .card-banner img {
@@ -714,31 +602,26 @@ body {
 }
 
 .blog-card .time {
-  color: var(--red-crayola);
-  font-size: var(--fs-6);
+  color: var(--brand-color);
+  font-size: 1.3rem;
   line-height: 1;
   margin-block-end: 10px;
 }
 
 .blog-card .card-title {
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
 .blog-card .card-title:is(:hover, :focus) {
-  color: var(--red-crayola);
+  color: var(--brand-color);
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #CONTACT
-\*-----------------------------------*/
-
+========================================*/
 .contact {
-  /* background-color: var(--white-2); */
-  background-color: none;
+  background-color: transparent;
 }
 
 .contact .section-text {
@@ -747,20 +630,21 @@ body {
 
 .contact-form {
   padding: 20px;
-  border-radius: var(--radius-2);
+  border-radius: 2px;
   margin-block-end: 30px;
-  box-shadow: var(--shadow-1);
+  box-shadow: 0 6px 24px rgba(31, 41, 55, 0.05);
 }
 
 .input-field {
-  background-color: var(--btn-color);
-  color: var(--btn-color);
-  font-size: var(--fs-5);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
   padding: 15px;
-  border-radius: var(--radius-2);
+  border-radius: 2px;
   outline: 1px solid transparent;
   outline-offset: 0;
   margin-block-end: 15px;
+  transition: 0.25s ease;
 }
 
 .input-field::-webkit-inner-spin-button {
@@ -768,11 +652,11 @@ body {
 }
 
 .input-field:focus {
-  outline-color: var(--red-crayola);
+  outline-color: var(--accent-color);
 }
 
 .input-field::placeholder {
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
 .input-field:focus::placeholder {
@@ -790,12 +674,12 @@ textarea.input-field {
 .checkbox {
   width: max-content;
   margin-block-start: 5px;
-  accent-color: var(--red-crayola);
+  accent-color: var(--brand-color);
 }
 
 .label-link {
   display: inline-block;
-  color: var(--red-crayola);
+  color: var(--brand-color);
 }
 
 .label-link:is(:hover, :focus) {
@@ -810,7 +694,7 @@ textarea.input-field {
 }
 
 .checkbox-wrapper .label {
-  font-size: var(--fs-6);
+  font-size: 1.3rem;
 }
 
 .contact-list {
@@ -825,27 +709,26 @@ textarea.input-field {
 }
 
 .contact-card {
-
   padding: 20px;
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-1);
+  border-radius: 2px;
+  box-shadow: 0 6px 24px rgba(31, 41, 55, 0.05);
   display: flex;
   align-items: flex-start;
   gap: 15px;
 }
 
 .contact-card .card-icon {
-  background-color: var(--semi-light);
-  color: var(--red-crayola);
+  background-color: var(--secondary-color);
+  color: var(--brand-color);
   font-size: 25px;
   padding: 13px;
   border-radius: 50%;
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
 .contact-card:is(:hover, :focus) .card-icon {
-  background-color: var(--red-crayola);
-  color: var(--white-1);
+  background-color: var(--accent-color);
+  color: var(--body-bg);
 }
 
 .contact-card .card-title {
@@ -853,73 +736,32 @@ textarea.input-field {
 }
 
 .contact-card :is(.card-link, .card-address) {
-  font-size: var(--fs-6);
-  transition: var(--transition-1);
+  font-size: 1.3rem;
+  transition: 0.25s ease;
 }
 
 .contact-card .card-link:is(:hover, :focus) {
-  color: var(--red-crayola);
+  color: var(--brand-color);
 }
 
 
-
-
-
-/*-----------------------------------*\
+/*========================================
   #FOOTER
-\*-----------------------------------*/
-
+========================================*/
 .footer {
-  /* background-color: var(--white-2); */
   padding-block: 20px;
 }
 
 .copyright {
-  font-size: var(--fs-6);
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .copyright-link {
-  color: var(--red-crayola);
-  font-weight: var(--fw-500);
+  color: var(--accent-color);
+  font-weight: 700;
   display: inline-block;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-.back-top-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: var(--btn-color);
-  color: var(--white-1);
-  padding: 12px;
-  border-radius: 50%;
-  box-shadow: var(--shadow-2);
-  z-index: 4;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-}
-
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
-
-.back-top-btn:is(:hover, :focus) {
-  opacity: 0.9;
-}
-
-
-
 
 
 /*-----------------------------------*\
@@ -929,12 +771,7 @@ textarea.input-field {
 /**
  * responsive for larger than 575px screen
  */
-
 @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -947,12 +784,6 @@ textarea.input-field {
     column-gap: 25px;
   }
 
-
-
-  /**
-   * BLOG
-   */
-
   .blog .grid-list {
     grid-template-columns: 1fr;
   }
@@ -964,57 +795,23 @@ textarea.input-field {
     gap: 10px;
   }
 
-
-
-  /**
-   * CONTACT
-   */
-
-  .input-wrapper {
-    display: flex;
-    gap: 15px;
-  }
-
   .contact-item {
     min-width: calc(50% - 18px);
   }
-
 }
 
 
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
+    /* Typography adjustments for larger screens */
     --fs-1: 4.5rem;
     --fs-2: 3.7rem;
     --fs-3: 2.3rem;
     --fs-4: 1.8rem;
     --fs-5: 1.5rem;
     --fs-6: 1.4rem;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 720px;
@@ -1025,22 +822,10 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero-text {
     max-width: 60ch;
     margin-inline: auto;
   }
-
-
-
-  /**
-   * ABOUT
-   */
 
   .about-banner {
     max-width: 550px;
@@ -1051,12 +836,6 @@ textarea.input-field {
     margin-inline: 0;
   }
 
-
-
-  /**
-   * CONTACT
-   */
-
   .contact-form {
     padding: 30px;
   }
@@ -1064,46 +843,19 @@ textarea.input-field {
   .contact-item {
     min-width: calc(50% - 12.5px);
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 992px screen
  */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 5rem;
     --fs-2: 4rem;
     --fs-3: 2.5rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 100px;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 960px;
@@ -1113,23 +865,19 @@ textarea.input-field {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-
-  /**
-   * HEADER
-   */
-
+  /* Hide mobile nav toggle on larger screens */
   .nav-toggle-btn {
     display: none;
   }
 
+  /* Replace mobile navbar with horizontal list */
   .navbar,
   .navbar.active {
     all: unset;
   }
 
   .navbar-list {
-    all: unset;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     gap: 30px;
@@ -1140,7 +888,7 @@ textarea.input-field {
   }
 
   .navbar-link:is(:hover, :focus) {
-    color: var(--btn-color);
+    color: var(--accent-color);
   }
 
   .navbar-link::after {
@@ -1150,10 +898,10 @@ textarea.input-field {
     left: 0;
     width: 100%;
     height: 2px;
-    background-image: var(--gradient);
+    background: var(--accent-color);
     transform: scaleX(0);
     transform-origin: left;
-    transition: var(--transition-2);
+    transition: 0.4s all ease;
   }
 
   .navbar-link:is(:hover, :focus)::after {
@@ -1163,12 +911,6 @@ textarea.input-field {
   .header .btn {
     margin-block-start: 0;
   }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero .container {
     display: grid;
@@ -1194,19 +936,13 @@ textarea.input-field {
     left: 0;
     width: 2px;
     height: 100%;
-    background-color: var(--red-crayola);
+    background-color: var(--accent-color);
   }
 
   .hero-text,
   .hero .btn {
     margin-inline: 0;
   }
-
-
-
-  /**
-   * SERVICE
-   */
 
   .service-card {
     padding: 20px;
@@ -1216,21 +952,9 @@ textarea.input-field {
     --fs-3: 2.3rem;
   }
 
-
-
-  /**
-   * PROJECT
-   */
-
   .project-card .card-subtitle {
     --fs-6: 1.5rem;
   }
-
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container {
     display: grid;
@@ -1242,12 +966,6 @@ textarea.input-field {
   .about-banner {
     margin-block-end: 0;
   }
-
-
-
-  /**
-   * BLOG
-   */
 
   .blog .grid-list {
     grid-template-columns: 1fr 1fr;
@@ -1279,12 +997,6 @@ textarea.input-field {
     --fs-6: 1.6rem;
   }
 
-
-
-  /**
-   * CONTACT
-   */
-
   .checkbox-wrapper {
     margin-block: 20px;
   }
@@ -1300,56 +1012,29 @@ textarea.input-field {
   .contact-card .card-icon {
     font-size: 32px;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
  */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 6.8rem;
     --fs-2: 4.5rem;
     --fs-4: 1.9rem;
     --fs-5: 1.6rem;
     --fs-6: 1.6rem;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 1140px;
   }
 
   .btn {
+    /* If needed, adjust button font size */
     --fs-6: 1.5rem;
   }
-
-
-
-  /**
-   * SERVICE
-   */
 
   .service-card {
     padding: 30px;
@@ -1359,12 +1044,6 @@ textarea.input-field {
     --fs-3: 2.5rem;
   }
 
-
-
-  /**
-   * PROJECT
-   */
-
   .project-card .card-content {
     padding: 30px;
   }
@@ -1372,12 +1051,6 @@ textarea.input-field {
   .project-card .card-subtitle {
     --fs-6: 1.6rem;
   }
-
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container {
     gap: 60px;
@@ -1391,21 +1064,9 @@ textarea.input-field {
     font-size: 20px;
   }
 
-
-
-  /**
-   * CTA
-   */
-
   .cta .section-title {
     margin-block: 15px 24px;
   }
-
-
-
-  /**
-   * BLOG
-   */
 
   .blog-card .time {
     --fs-6: 1.6rem;
@@ -1414,12 +1075,6 @@ textarea.input-field {
   .blog-card.grid .h3 {
     --fs-3: 2.4rem;
   }
-
-
-
-  /**
-   * CONTACT
-   */
 
   .contact-form {
     padding: 50px;
@@ -1432,5 +1087,4 @@ textarea.input-field {
   .contact-card .card-icon {
     padding: 15px;
   }
-
 }
