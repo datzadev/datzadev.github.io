@@ -11,11 +11,15 @@
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/res.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
@@ -30,77 +34,57 @@
 
 <body id="top">
 
-  <!---- #HEADER-->
+  <header class="header">
+    <a href="#" class="header__logo">Clay</a>
 
-  <header class="header" data-header>
-    <div class="container">
+    <i class='bx bx-menu header__toggle' id="header-toggle"></i>
 
-      <a href="#" class="logo">
-        <img src="#" alt="DATZA">
-      </a>
+    <nav class="nav" id="nav-menu">
+      <div class="nav__content bd-grid">
+        <a href="" class="nav__perfil">
+          <div class="nav__img">
+            <img src="assets/img/perfil.jpg" alt="">
+          </div>
 
-      <nav class="navbar container" data-navbar>
-        <ul class="navbar-list">
+          <div>
+            <img src="logo" alt="DATZA">
+          </div>
+        </a>
 
-          <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
 
-          <li class="dropdown">
-            <a href="#service" class="navbar-link dropdown-toggle " data-nav-link>Services</a>
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">About <i class='bx bx-chevron-down dropdown__icon'></i></a>
 
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="navbar-link">Code Development</a>
-              </li>
 
-              <li>
-                <a href="#" class="navbar-link">Wordpress Development</a>
-              </li>
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="#" class="nav__link">About me</a></li>
+                <li class="dropdown__item"><a href="#" class="nav__link">Location</a></li>
+                <li class="dropdown__item"><a href="#" class="nav__link">Studies</a></li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#" class="navbar-link">Graphic Desing</a>
-              </li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
 
-              <li>
-                <a href="#" class="navbar-link">Development</a>
-              </li>
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">Works <i class='bx bx-chevron-down dropdown__icon'></i></a>
 
-            </ul>
-          </li>
 
-          <li>
-            <a href="#project" class="navbar-link" data-nav-link>Project</a>
-          </li>
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="#" class="nav__link">Recent jobs</a></li>
+                <li class="dropdown__item"><a href="#" class="nav__link">Better jobs</a></li>
+                <li class="dropdown__item"><a href="#" class="nav__link">Work Awards</a></li>
+              </ul>
+            </li>
 
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-          </li>
-
-          <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="btn btn-primary">Get Started</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" class="open"></ion-icon>
-        <ion-icon name="close-outline" class="close"></ion-icon>
-      </button>
-
-    </div>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-
-
 
   <!-- #MAIN SECTION START FROM HERE------------------------->
 
@@ -837,7 +821,7 @@
 
   <!-- #CUSTOM JS  -->
   <script src="./assets/js/script.js" defer></script>
-
+  <script src="./assets/js/nav.js"></script>
   <!-- 
     - ionicon link
   -->
