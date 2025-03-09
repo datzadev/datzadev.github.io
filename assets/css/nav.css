@@ -57,7 +57,7 @@ a {
   width: 100%;
   height: var(--header-height);
   padding: 0 1rem;
-  background-color: var(--dark-color);
+  background-color: #000;
   z-index: var(--z-fixed);
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@ a {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: var(--brand-color);
+
     width: 80%;
     height: 100vh;
     padding: 2rem 0;
